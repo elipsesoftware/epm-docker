@@ -1,0 +1,62 @@
+version: '3.4'
+
+services:
+
+  # Microsoft SQL Server instance that contains the EPM data.
+  database:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    env_file: .env
+
+  # Open Policy Agent (OPA) service that is used as a side-car of EPM Web Server for resource authorization.
+  opa:
+    image: openpolicyagent/opa
+    env_file: .env
+    command: run --server --addr :45000
+
+  # EPM Modules
+
+  scripthost:
+    image: elipsesoftware/epm-scripthost:4.15
+    env_file: .env
+
+  epmserver:
+    image: elipsesoftware/epm-server:4.15
+    ports:
+      - "6516:6516"
+    env_file: .env
+    depends_on:
+      - database
+      - scripthost
+    
+  epmwebserver:
+    image: elipsesoftware/epm-webserver:4.15
+    env_file: .env
+    depends_on:
+      - epmserver
+      - opa
+    extra_hosts:
+      - "localhost:192.168.4.21"
+
+  epmnode:
+    image: elipsesoftware/epm-node:4.15
+    env_file: .env
+
+  epmportal:
+    image: elipsesoftware/epm-portal:4.15
+    env_file: .env
+    depends_on:
+      - epmwebserver
+      - epmnode
+    extra_hosts:
+      - "localhost:192.168.4.21"
+
+  # Reverse Proxy
+
+  nginx:
+    image: nginx
+    ports:
+      - "8181:8181"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    
+    
