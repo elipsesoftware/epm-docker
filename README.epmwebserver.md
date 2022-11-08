@@ -40,7 +40,7 @@ You can use environment variables to configure EPM Web Server on Linux Container
 
 Start an EPM Web Server instance using the SA administrator user.
 
-> ``docker container run -e "EPM_EPMSERVER=epmserver" -e "EPM_EPMUSER=sa" -e "EPM_EPMPWD=yourStrong(!)Password" -p 44332:44332 -p 44333:44333 -d elipsesoftware/epm-webserver:4.15:latest``
+> ``docker container run -e "EPM_EPMSERVER=epmserver" -e "EPM_EPMUSER=sa" -e "EPM_EPMPWD=yourStrong(!)Password" -p 44332:44332 -p 44333:44333 -d elipsesoftware/epm-webserver``
 
 The [EPM Docker samples](https://github.com/elipsesoftware/epm-docker/blob/main/samples/README.md) show more ways to configure and use EPM and Docker together.
 
@@ -56,4 +56,4 @@ EPM:
 ## Linux amd64 Tags
 Tags | OS Version
 -----------| ------------
-4.15.100-alpine3.15, 4.15-alpine3.15, 4.15.100, 4.15, latest | Alpine 3.15
+4.16-alpine3.15, 4.16, latest | Alpine 3.15

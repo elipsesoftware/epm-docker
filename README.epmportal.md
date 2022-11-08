@@ -34,7 +34,7 @@ You can use environment variables to configure EPM Web Server on Linux Container
 
 Start an EPM Portal instance using the SA administrator user.
 
-> ``docker container run -e "EPM_AUTHENDPOINT=http://epmwebserver:44333" -e "EPM_WEBAPIENDPOINT=http://epmwebserver:44332" -e "EPM_NODEENDPOINT=http://epmnode:46000" -p 44331:44331 -d elipsesoftware/epm-portal:4.15:latest``
+> ``docker container run -e "EPM_AUTHENDPOINT=http://epmwebserver:44333" -e "EPM_WEBAPIENDPOINT=http://epmwebserver:44332" -e "EPM_NODEENDPOINT=http://epmnode:46000" -p 44331:44331 -d elipsesoftware/epm-portal``
 
 The [EPM Docker samples](https://github.com/elipsesoftware/epm-docker/blob/main/samples/README.md) show more ways to configure and use EPM and Docker together.
 
@@ -50,4 +50,4 @@ EPM:
 ## Linux amd64 Tags
 Tags | OS Version
 -----------| ------------
-4.15.100-alpine3.15, 4.15-alpine3.15, 4.15.100, 4.15, latest | Alpine 3.15
+4.16-alpine3.15, 4.16, latest | Alpine 3.15
