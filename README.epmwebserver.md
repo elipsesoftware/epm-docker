@@ -1,7 +1,7 @@
 # Featured Tags
 
-* `4.15-latest` (Latest)
-  * `docker pull elipsesoftware/epm-webserver:4.15`
+* `latest` (Latest)
+  * `docker pull elipsesoftware/epm-webserver`
 
 # About
 

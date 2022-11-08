@@ -1,7 +1,7 @@
 # Featured Tags
 
-* `4.15-latest` (Latest)
-  * `docker pull elipsesoftware/epm-scripthost:4.15`
+* `latest` (Latest)
+  * `docker pull elipsesoftware/epm-scripthost`
 
 # About
 
