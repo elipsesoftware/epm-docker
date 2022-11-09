@@ -39,7 +39,7 @@ Start an EPM Server instance that will create a new EPM Database before initiali
 
 > ``docker container run -e "EPM_DATABASECONNECTIONSTRING=Data Source=database;Integrated Security=False;User ID=sa;Password=yourStrongDB(!)Password" -e "EPM_DATABASENAME=EpmDatabase" -e "EPM_ADMINPASSWORD=yourStrong(!)Password" -e EPM_CONFIGUREDATABASE=TRUE -p 6516:6516 -d elipsesoftware/epm-server``
 
-The [EPM Docker samples](https://github.com/elipsesoftware/epm-docker/blob/main/samples/README.md) show more ways to configure and use EPM and Docker together.
+The [EPM Docker samples](https://github.com/elipsesoftware/epm-docker/blob/main/samples) show more ways to configure and use EPM and Docker together.
 
 # Questions 
 - **How do I map a volume using Docker for Windows?** Make sure to enable [shared drives in the settings menu](https://docs.docker.com/docker-for-windows/#shared-drives). After that, you can map a volume specifying the **Windows path:Linux path**. The following is an example of a command to map a Windows folder to the ProgramData directory in the container:

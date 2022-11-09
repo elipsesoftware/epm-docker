@@ -36,7 +36,7 @@ Start an EPM Portal instance using the SA administrator user.
 
 > ``docker container run -e "EPM_AUTHENDPOINT=http://epmwebserver:44333" -e "EPM_WEBAPIENDPOINT=http://epmwebserver:44332" -e "EPM_NODEENDPOINT=http://epmnode:46000" -p 44331:44331 -d elipsesoftware/epm-portal``
 
-The [EPM Docker samples](https://github.com/elipsesoftware/epm-docker/blob/main/samples/README.md) show more ways to configure and use EPM and Docker together.
+The [EPM Docker samples](https://github.com/elipsesoftware/epm-docker/blob/main/samples) show more ways to configure and use EPM and Docker together.
 
 # Related Repos
 

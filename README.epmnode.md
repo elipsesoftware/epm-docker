@@ -22,7 +22,7 @@ Start an EPM Node instance using the SA administrator user.
 
 > ``docker container run -e "EPM_NODEPORT=46000" -d elipsesoftware/epm-node``
 
-The [EPM Docker samples](https://github.com/elipsesoftware/epm-docker/blob/main/samples/README.md) show more ways to configure and use EPM and Docker together.
+The [EPM Docker samples](https://github.com/elipsesoftware/epm-docker/blob/main/samples) show more ways to configure and use EPM and Docker together.
 
 # Related Repos
 

@@ -24,7 +24,7 @@ Start an EPM Script Host instance that communicates with an EPM Server at machin
 
 > ``docker container run -e "EPM_SCRIPTHOSTNAME=epmserver" -d elipsesoftware/epm-scripthost``
 
-The [EPM Docker samples](https://github.com/elipsesoftware/epm-docker/blob/main/samples/README.md) show more ways to configure and use EPM and Docker together.
+The [EPM Docker samples](https://github.com/elipsesoftware/epm-docker/blob/main/samples) show more ways to configure and use EPM and Docker together.
 
 # Related Repos
 
