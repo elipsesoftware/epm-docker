@@ -8,6 +8,13 @@ The instructions assume that you have cloned this repo, have [Docker](https://ww
 
 ## Starting the application
 
+Before starting the application, update the IP address of all `extra_hosts` properties of the Docker Compose YAML [file](https://github.com/elipsesoftware/epm-docker/blob/main/samples/docker-compose.yml) so that the `localhost:[localhost IP]` matches the actual IP address of the host machine.
+
+```
+extra_hosts:
+  - "localhost:[localhost IP]"
+```
+
 You can start the application running the following command, which will run all the containers declared in the YAML file:
 
 ```
