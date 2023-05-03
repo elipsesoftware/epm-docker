@@ -11,7 +11,6 @@ This image contains the [Elipse Plant Manager](https://www.elipse.com.br/en/prod
 
 ## Requirements
 
-- Windows Server 2012 R2
 - At least 8 GB of RAM
 - 250MB of disk space
 - Microsoft SQL Server 2012
@@ -60,3 +59,4 @@ EPM:
 Tags | OS Version
 -----------| ------------
 4.16-alpine3.15, 4.16, latest | Alpine 3.15
+4.17-alpine3.17, 4.17, latest | Alpine 3.17

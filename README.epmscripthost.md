@@ -40,3 +40,4 @@ EPM:
 Tags | OS Version
 -----------| ------------
 4.16-alpine3.15, 4.16, latest | Alpine 3.15
+4.17-alpine3.15, 4.17, latest | Alpine 3.15

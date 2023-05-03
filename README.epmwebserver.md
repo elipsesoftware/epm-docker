@@ -23,6 +23,14 @@ You can use environment variables to configure EPM Web Server on Linux Container
   - The port where the EPM authentication server (OAuth) will be listening on. (Default is 44333)
 - `EPM_WEBAPIPORT` 
   - The port where the server of all EPM related REST API will be listening on. (Default is 44332)
+- `EPM_HTTPS`
+  - Enable WebApi HTTPS endpoint
+- `EPM_HTTPSWEBAPIPORT`
+  - The HTTPS port where the server of all EPM related REST API will be listening on. (Default is 44339)
+- `EPM_HTTPSCERTIFICATEPATH`
+  - The certificate file path (in PEM format) that will be associated with the HTTPS endpoint. If not specified, a self-signed certificate will be used instead.
+- `EPM_HTTPSCERTIFICATEKEYPATH`
+  - The certificate key file path of the certificate in use. If not specified, the key of the included self-signed certificate will be used instead.
 - `EPM_WEBAPIDOC` 
   - Enables the Swagger documentation endpoint of the EPM REST API.
 - `EPM_EPMSERVER`
@@ -57,3 +65,4 @@ EPM:
 Tags | OS Version
 -----------| ------------
 4.16-alpine3.15, 4.16, latest | Alpine 3.15
+4.17-alpine3.17, 4.17, latest | Alpine 3.17
