@@ -23,9 +23,9 @@ docker-compose up
 
 Wait some time until the application starts.
 
-> Note: The compose [file](https://github.com/elipsesoftware/epm-docker/blob/main/samples/docker-compose.yml) maps port 8181 on your local machine to port 8181 in the nginx container. See the [Docker Compose file reference](https://docs.docker.com/compose/compose-file/compose-file-v3/#ports) for more information. In some cases, you might see an error because the host port you select is already in use. Choose a different port in that case.
+> Note: The compose [file](https://github.com/elipsesoftware/epm-docker/blob/main/samples/docker-compose.yml) maps ports 8181 and 443 (HTTPS) on your local machine to port 8181 and 443 (HTTPS) in the nginx container. See the [Docker Compose file reference](https://docs.docker.com/compose/compose-file/compose-file-v3/#ports) for more information. In some cases, you might see an error because the host port you select is already in use. Choose a different port in that case.
 
-You can navigate do http://localhost:8181 in your web browser to connect to the EPM Portal container.
+You can navigate do https://localhost in your web browser to connect to the EPM Portal container.
 
 Also, you can [download](https://www.elipse.com.br/en/downloads) and install EPM Studio to access the EPM Server container that is running as part of this sample.
 

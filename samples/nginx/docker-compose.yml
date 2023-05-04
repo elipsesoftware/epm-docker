@@ -16,11 +16,11 @@ services:
   # EPM Modules
 
   scripthost:
-    image: elipsesoftware/epm-scripthost
+    image: scripthost
     env_file: .env
 
   epmserver:
-    image: elipsesoftware/epm-server
+    image: epmserver
     ports:
       - "6516:6516"
     env_file: .env
@@ -29,26 +29,26 @@ services:
       - scripthost
     
   epmwebserver:
-    image: elipsesoftware/epm-webserver
+    image: epmwebserver
     env_file: .env
     depends_on:
       - epmserver
       - opa
     extra_hosts:
-      - "localhost:192.168.4.21"
+      - "localhost:192.168.8.3"
 
   epmnode:
-    image: elipsesoftware/epm-node
+    image: epmnode
     env_file: .env
 
   epmportal:
-    image: elipsesoftware/epm-portal
+    image: epmportal
     env_file: .env
     depends_on:
       - epmwebserver
       - epmnode
     extra_hosts:
-      - "localhost:192.168.4.21"
+      - "localhost:192.168.8.3"
 
   # Reverse Proxy
 
@@ -56,7 +56,8 @@ services:
     image: nginx
     ports:
       - "8181:8181"
+      - "443:443"
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
-    
-    
+      - ./webserver.crt:/webserver.crt
+      - ./webserver.key:/webserver.key
