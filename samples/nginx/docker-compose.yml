@@ -16,11 +16,11 @@ services:
   # EPM Modules
 
   scripthost:
-    image: scripthost
+    image: elipsesoftware/epm-scripthost
     env_file: .env
 
   epmserver:
-    image: epmserver
+    image: elipsesoftware/epm-server
     ports:
       - "6516:6516"
     env_file: .env
@@ -29,7 +29,7 @@ services:
       - scripthost
     
   epmwebserver:
-    image: epmwebserver
+    image:  elipsesoftware/epm-webserver
     env_file: .env
     depends_on:
       - epmserver
@@ -38,11 +38,11 @@ services:
       - "localhost:192.168.8.3"
 
   epmnode:
-    image: epmnode
+    image: elipsesoftware/epm-node
     env_file: .env
 
   epmportal:
-    image: epmportal
+    image: elipsesoftware/epm-portal
     env_file: .env
     depends_on:
       - epmwebserver
