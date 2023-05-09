@@ -11,7 +11,6 @@ This image contains the [Elipse Plant Manager](https://www.elipse.com.br/en/prod
 
 ## Requirements
 
-- Windows Server 2012 R2
 - At least 4 GB of RAM
 - 400MB of disk space
 
