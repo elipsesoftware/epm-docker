@@ -19,7 +19,7 @@ This image contains the [Elipse Plant Manager](https://www.elipse.com.br/en/prod
 You can use environment variables to configure EPM Web Server on Linux Containers.
 
 - `EPM_SERVERPORT` 
-  - The port where the EPM Portal server will be listening on. (Default is 44331)
+  - The port where the EPM Workbench server will be listening on. (Default is 44338)
 - `EPM_AUTHENDPOINT`
   - The endpoint of the Elipse Plant Manager (EPM) Web Server authentication module.
 - `EPM_WEBAPIENDPOINT`
