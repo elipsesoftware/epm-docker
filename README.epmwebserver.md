@@ -23,7 +23,7 @@ You can use environment variables to configure EPM Web Server on Linux Container
 - `EPM_WEBAPIPORT` 
   - The port where the server of all EPM related REST API will be listening on. (Default is 44332)
 - `EPM_HTTPS`
-  - Enable WebApi HTTPS endpoint
+  - Enable HTTPS endpoints
 - `EPM_HTTPSWEBAPIPORT`
   - The HTTPS port where the server of all EPM related REST API will be listening on. (Default is 44339)
 - `EPM_HTTPSCERTIFICATEPATH`
