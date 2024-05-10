@@ -23,6 +23,8 @@ You can use environment variables to configure EPM Server on Linux Containers.
   - The string that will be used to connect to the database source.
 - `EPM_DATABASENAME`
   - The name of the database where the EPM data is located.
+- `EPM_EPMDATABASETYPE`
+  - The type of the source database. Enabled values are "SqlServer" or "PostgreSQL".
 - `EPM_ADMINPASSWORD`
   - The EPM administrator password that will be used by the server.
 - `EPM_CONFIGUREDATABASE`
